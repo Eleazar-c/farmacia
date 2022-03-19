@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <!-- Este son los iconos y tiene tambien tiene que estar la carpeta webfonts  -->
     <link rel="stylesheet" href="../css/css/all.min.css">
+    <!-- Nuestros estilos  -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
