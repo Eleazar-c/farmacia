@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
+<?php
+session_start(['name'=>'FARM']);
+if (!empty($_SESSION['us_tipo'])) {
+    header('Location:../controlador/loginController.php');
+}else{
+    // Borramos todas las sessiones en curso
+    session_unset();
+    session_destroy();
+?>
 <body>
     <img src="../img/wave.png" alt="" class="wave">
     <div class="contenedor">
@@ -47,3 +56,6 @@
     <script src="../js/main.js"></script>
 </body>
 </html>
+<?php
+}
+?>

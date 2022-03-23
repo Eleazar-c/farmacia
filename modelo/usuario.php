@@ -22,6 +22,7 @@ class usuario{
       // Le pasamos los parametros por medio de un array
       $query->execute(array(":DNI"=>$dni,":PASS"=>$pass));
       $this->objetos=$query->fetchall();
+
       return $this->objetos;
    }
 }
