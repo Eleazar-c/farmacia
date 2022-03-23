@@ -3,8 +3,8 @@
 class conexion{
     private $servidor ="localhost";
     private $db ="farmacia";
-    private $puerto="3306";
-    private $chatset="utf8";
+    private $puerto=3306;
+    private $charset="utf8";
     private $usuario="root";
     private $password="";
     public $pdo=null;
@@ -16,7 +16,7 @@ class conexion{
 
     public function __construct()
     {
-        $this->pdo= new PDO("mysql:dbname=($this->db);host=($this->servidor);port=($this->puerto);charset=($this->charset)",$this->usuario,$this->password,$this->atributos);
+        $this->pdo= new PDO("mysql:dbname={$this->db};host={$this->servidor};port={$this->puerto};charset={$this->charset}",$this->usuario,$this->password,$this->atributos);
         
     }
 

@@ -19,7 +19,7 @@
             <img src="../img/bg.svg" alt="">
         </div>
         <div class="contenido-login">
-            <form action="" method="post">
+            <form action="../controlador/loginController.php" method="post">
                 <img src="../img/logo.png" alt="">
                 <div class="input-div dni">
                     <div class="i">
