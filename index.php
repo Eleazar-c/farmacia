@@ -7,29 +7,29 @@
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <!-- Este son los iconos y tiene tambien tiene que estar la carpeta webfonts  -->
-    <link rel="stylesheet" href="../css/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Nuestros estilos  -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
 <?php
 session_start(['name'=>'FARM']);
 if (!empty($_SESSION['us_tipo'])) {
-    header('Location:../controlador/loginController.php');
+    header('Location:controlador/loginController.php');
 }else{
     // Borramos todas las sessiones en curso
     session_unset();
     session_destroy();
 ?>
 <body>
-    <img src="../img/wave.png" alt="" class="wave">
+    <img src="img/wave.png" alt="" class="wave">
     <div class="contenedor">
         <div class="img">
-            <img src="../img/bg.svg" alt="">
+            <img src="img/bg.svg" alt="">
         </div>
         <div class="contenido-login">
-            <form action="../controlador/loginController.php" method="post">
-                <img src="../img/logo.png" alt="">
+            <form action="controlador/loginController.php" method="post">
+                <img src="img/logo.png" alt="">
                 <div class="input-div dni">
                     <div class="i">
                         <i class="fas fa-user"></i>
@@ -53,7 +53,7 @@ if (!empty($_SESSION['us_tipo'])) {
             </form>
         </div>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 <?php

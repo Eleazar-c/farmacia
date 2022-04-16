@@ -37,6 +37,6 @@ if (!empty($_SESSION['us_tipo'])) {
                 break;
             }
     }else{
-            header('Location:../vista/login.php');
+            header('Location:../index.php');
     }
 }

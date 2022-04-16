@@ -16,6 +16,6 @@ if ($_SESSION['us_tipo']==2) {
 </html>
 <?php
 }else{
-    header('Location:../vista/login.php');
+    header('Location:../index.php');
 }
 ?>
